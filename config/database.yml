@@ -1,0 +1,10 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: pg_dev
+  pool: 5
+  username: bob
+  password: qwerty
+production:
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
