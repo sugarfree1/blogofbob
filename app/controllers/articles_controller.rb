@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
+  layout 'application'
+
   def index
-    render json: {}
   end
 end
