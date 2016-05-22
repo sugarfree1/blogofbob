@@ -54,4 +54,7 @@ end
 gem 'rack-timeout'
 
 gem 'haml'
+
 gem 'haml-rails'
+
+gem 'bootstrap-sass', '~> 3.3.6'
