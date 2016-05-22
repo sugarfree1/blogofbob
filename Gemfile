@@ -52,3 +52,6 @@ group :production, :staging do
 end
 
 gem 'rack-timeout'
+
+gem 'haml'
+gem 'haml-rails'
