@@ -6,5 +6,11 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    = Blogofbob::Config.fetch('announcement', '').to_s.html_safe
   %body
+    .navbar.navbar-fixed-top.navbar-inverse
+      .container
+        .navbar-header
+          %a.navbar-brand(href='javascript;')
+            = I18n.t('title')
     = yield

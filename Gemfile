@@ -49,12 +49,16 @@ group :production, :staging do
   gem 'puma'
   gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+  gem 'rack-timeout'
 end
 
-gem 'rack-timeout'
 
 gem 'haml'
 
 gem 'haml-rails'
 
 gem 'bootstrap-sass', '~> 3.3.6'
+# Required for debug
+gem 'pry'
+# Settings setup
+gem 'settingslogic'
