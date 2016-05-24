@@ -2,11 +2,12 @@
 %html
   %head
     %meta{:content => 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type'}/
-    %title Title
+    %title
+      = I18n.t('title')
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-    = Blogofbob::Config.fetch('announcement', '').to_s.html_safe
+    = Rails.application.config.js_metrics.to_s.html_safe
   %body
     .navbar.navbar-fixed-top.navbar-inverse
       .container
