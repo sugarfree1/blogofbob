@@ -62,3 +62,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'pry'
 # Settings setup
 gem 'settingslogic'
+# Writing articles markdown
+gem 'kramdown'
+# Backbone.js
+gem 'rails-backbone'

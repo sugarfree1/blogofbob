@@ -9,9 +9,5 @@
     = csrf_meta_tags
     = Rails.application.config.js_metrics.to_s.html_safe
   %body
-    .navbar.navbar-fixed-top.navbar-inverse
-      .container
-        .navbar-header
-          %a.navbar-brand(href='javascript;')
-            = I18n.t('title')
+    = render 'layouts/navbar'
     = yield

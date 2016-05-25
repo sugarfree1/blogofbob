@@ -1,0 +1,15 @@
+.navbar.navbar-fixed-top.navbar-inverse
+  .container
+    .navbar-header
+      %a.navbar-brand(href='javascript:;')
+        = I18n.t('title')
+    .navbar-collapse.collapse.menu
+      %ul.nav.navbar-nav
+        %li
+          %a.home(href="#{root_url}")
+            = I18n.t('menu.navbar.home')
+        %li
+          %a.articles(href='/articles/list')
+            = I18n.t('menu.navbar.articles')
+:coffee
+  new Menu()

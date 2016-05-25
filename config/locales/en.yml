@@ -1,2 +1,6 @@
 en:
   title: "Car Guys Cave"
+  menu:
+    navbar:
+      home: "Home"
+      articles: "Articles"
